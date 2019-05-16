@@ -1,5 +1,5 @@
 Bootstrap: shub
-From: deeplearnphysics/larcv3-singularity:centos7-cuda-core
+From: DeepLearnPhysics/larcv3-singularity:centos7-cuda-core
 
 
 %help
