@@ -46,6 +46,8 @@ Version centos7-cuda-torch-py36
     # and then added the prebuilt binaries to this recipe for installation.
 
     # Definitely a bootstrap method, and not easily maintained since the build is by hand.
+    
+    scl enable rh-python36 bash
 
     # Download the prebuilt binary:
     wget https://github.com/DeepLearnPhysics/larcv3-singularity/blob/master/wheels/cuda/pytorch/scn_cuda10-0.2.12182018-cp36-cp36m-linux_x86_64.whl
@@ -54,7 +56,6 @@ Version centos7-cuda-torch-py36
 
 
 
-    scl enable rh-python36 bash
     pip3 --no-cache-dir --disable-pip-version-check install torch
     pip3 --no-cache-dir --disable-pip-version-check install torchvision
 
