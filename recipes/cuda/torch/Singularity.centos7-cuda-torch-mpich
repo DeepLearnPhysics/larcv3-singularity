@@ -1,5 +1,5 @@
 Bootstrap: shub
-From: deeplearnphysics/larcv3-singularity:centos7-cuda-core-mpich
+From: DeepLearnPhysics/larcv3-singularity:centos7-cuda-core-mpich
 
 %help
 Centos7 with cuda9.0 cudnn7
