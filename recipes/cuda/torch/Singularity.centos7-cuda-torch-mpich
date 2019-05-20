@@ -76,8 +76,9 @@ Version centos7-cuda-torch-mpich-py36
     rm scn_cuda10-0.2.12182018-cp36-cp36m-linux_x86_64.whl
 
 
-    pip3 --disable-pip-version-check --no-cache-dir install cffi
-    pip3 --disable-pip-version-check --no-cache-dir install pycparser
+    # Install all of the horovod dependencies:
+    pip3 --disable-pip-version-check --no-cache-dir install cffi pycparser cloudpickle
+
 
 #    # Download prebuilt libraries for horovod:
 #    wget https://github.com/deeplearnphysics/larcv3-singularity/raw/centos/wheels/cuda/pytorch/#cffi-1.11.5-cp36-cp36m-manylinux1_x86_64.whl
