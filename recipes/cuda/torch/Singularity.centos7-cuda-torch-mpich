@@ -51,7 +51,7 @@ Version centos7-cuda-torch-mpich-py36
     cd sparsehash
     ./configure
     make -j install
-
+    cd -
 
     pip3 --no-cache-dir --disable-pip-version-check install torch
     pip3 --no-cache-dir --disable-pip-version-check install torchvision
