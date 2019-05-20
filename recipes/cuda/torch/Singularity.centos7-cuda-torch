@@ -50,8 +50,8 @@ Version centos7-cuda-torch-py36
     scl enable rh-python36 bash
 
     # Download the prebuilt binary:
-    wget https://github.com/DeepLearnPhysics/larcv3-singularity/blob/master/wheels/cuda/pytorch/scn_cuda10-0.2.12182018-cp36-cp36m-linux_x86_64.whl
-    pip3 install scn_cuda10-0.2.12182018-cp36-cp36m-linux_x86_64.whl 
+    wget https://github.com/DeepLearnPhysics/larcv3-singularity/raw/master/wheels/cuda/pytorch/scn_cuda10-0.2.12182018-cp36-cp36m-linux_x86_64.whl
+    pip3 --no-cache-dir --disable-pip-version-check install scn_cuda10-0.2.12182018-cp36-cp36m-linux_x86_64.whl 
     rm scn_cuda10-0.2.12182018-cp36-cp36m-linux_x86_64.whl
 
 
