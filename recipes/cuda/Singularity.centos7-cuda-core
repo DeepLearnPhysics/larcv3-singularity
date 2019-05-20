@@ -49,9 +49,9 @@ Version centos7-cuda-core
 
 
     # Common development tools:
+    yum install -y hdf5-devel
     yum install -y wget emacs vim cmake3
     yum install -y emacs vim openssh-clients zip 
-    yum install -y hdf5
 
     # pip basics
     # Need to enable pip3 with scl
