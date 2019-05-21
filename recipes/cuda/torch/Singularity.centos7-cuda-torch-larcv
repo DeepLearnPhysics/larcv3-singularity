@@ -1,0 +1,49 @@
+Bootstrap: shub
+From: DeepLearnPhysics/larcv3-singularity:centos7-cuda-torch
+
+%help
+Centos7 with cuda9.0 cudnn7
+ML/DL packages  : torchnightly sc-learn
+Sci.  packages  : numpy pandas sc-image matplotlib opencv-python
+Basic python    : ipython jupyter yaml pygments six zmq wheel h5py tqdm 
+Development kit : g++/gcc cython nvcc libqt4-dev python-dev
+Utility kit     : git wget emacs vim openssh-client swig larrcv
+
+To start your container simply try
+singularity exec THIS_CONTAINER.simg bash
+
+To use GPUs, try
+singularity exec --nv THIS_CONTAINER.simg bash
+
+%labels
+Maintainer coreyjadams
+Version centos7-cuda-torch-py36
+
+#------------
+# Global installation
+#------------
+%environment
+
+%post
+    
+    # Using the app area to store software:
+    cd /app
+
+    scl enable devtoolset-4 bash
+    scl enable rh-python36 bash
+
+    # Install swig
+    wget https://sourceforge.net/projects/swig/files/swig/swig-3.0.12/swig-3.0.12.tar.gz
+    tar -xf swig-3.0.12.tar.gz
+    cd swig-3.0.12/
+    ./configure --without-pcre
+    make
+    make install
+
+    cd ../
+    rm -rf swig-3.0.12
+    rm swig-3.0.12.tar.gz
+
+    #Install the latest larcv3:
+    git clone https://github.com/DeepLearnPhysics/larcv3.git
+    pip3 install -e larcv3    
