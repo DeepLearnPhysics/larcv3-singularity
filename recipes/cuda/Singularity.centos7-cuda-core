@@ -57,6 +57,18 @@ Version centos7-cuda-core
     # Need to enable pip3 with scl
     scl enable rh-python36 bash
 
+    # Install swig
+    wget https://sourceforge.net/projects/swig/files/swig/swig-3.0.12/swig-3.0.12.tar.gz
+    tar -xf swig-3.0.12.tar.gz
+    cd swig-3.0.12/
+    ./configure --without-pcre
+    make
+    make install
+
+    cd ../
+    rm -rf swig-3.0.12
+    rm swig-3.0.12.tar.gz
+
     pip3 --no-cache-dir --disable-pip-version-check install --upgrade setuptools 
     pip3 --no-cache-dir --disable-pip-version-check install future
     pip3 --no-cache-dir --disable-pip-version-check install 'matplotlib' 
