@@ -81,7 +81,7 @@ Version centos7-cuda-torch-mpich-py36
 
 
     # Download prebuilt libraries for horovod:
-    wget https://github.com/deeplearnphysics/larcv3-singularity/raw/centos/wheels/cuda/pytorch/horovod-0.16.2-cp36-cp36m-linux_x86_64.whl
+    wget https://github.com/DeepLearnPhysics/larcv3-singularity/raw/master/wheels/cuda/pytorch/horovod-0.16.2-cp36-cp36m-linux_x86_64.whl
 
 
     pip3 install horovod-0.16.2-cp36-cp36m-linux_x86_64.whl
