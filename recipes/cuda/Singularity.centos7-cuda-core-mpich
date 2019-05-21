@@ -69,4 +69,3 @@ Version centos7-cuda-core-mpich
     pip3 --no-cache-dir --disable-pip-version-check install mpi4py
 
 
-
