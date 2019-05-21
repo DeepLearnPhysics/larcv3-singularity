@@ -32,18 +32,8 @@ Version centos7-cuda-torch
     scl enable devtoolset-4 bash
     scl enable rh-python36 bash
 
-    # Install swig
-    wget https://sourceforge.net/projects/swig/files/swig/swig-3.0.12/swig-3.0.12.tar.gz
-    tar -xf swig-3.0.12.tar.gz
-    cd swig-3.0.12/
-    ./configure --without-pcre
-    make
-    make install
-
-    cd ../
-    rm -rf swig-3.0.12
-    rm swig-3.0.12.tar.gz
-
     #Install the latest larcv3:
     git clone https://github.com/DeepLearnPhysics/larcv3.git
-    pip3 install -e larcv3    
+    cd larcv3
+    python setup.py install --cmake-executable cmake3
+
