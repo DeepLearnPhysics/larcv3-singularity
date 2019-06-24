@@ -32,7 +32,9 @@ Version centos7-cuda-torch
     scl enable devtoolset-4 bash
     scl enable rh-python36 bash
 
+    pip3 install ninja
+
     #Install the latest larcv3:
     git clone https://github.com/DeepLearnPhysics/larcv3.git
-    pip install -e larcv3 
+    python setup.py install --cmake-executable cmake3
 
