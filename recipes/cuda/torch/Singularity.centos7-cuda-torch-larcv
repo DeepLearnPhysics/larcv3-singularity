@@ -36,5 +36,6 @@ Version centos7-cuda-torch
 
     #Install the latest larcv3:
     git clone https://github.com/DeepLearnPhysics/larcv3.git
+    cd larcv3/
     python setup.py install --cmake-executable cmake3
-
+    cd -
