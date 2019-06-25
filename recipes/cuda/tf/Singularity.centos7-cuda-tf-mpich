@@ -41,7 +41,7 @@ Version centos7-cuda-tf1.13.0-mpich3.2.1
 
     
     # tensorflow    
-    pip3 --no-cache-dir --disable-pip-version-check install --upgrade tensorflow-gpu==1.13.0
+    pip3 --no-cache-dir --disable-pip-version-check install --upgrade tensorflow-gpu==1.13.1
     pip3 --no-cache-dir --disable-pip-version-check install tensorboard
 
     # keras
