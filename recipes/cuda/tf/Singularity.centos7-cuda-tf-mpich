@@ -5,7 +5,7 @@ From: DeepLearnPhysics/larcv3-singularity:centos7-cuda-core-mpich
 %help
 Centos7 with cuda10.0 cudnn7
 ML/DL packages  : tensorflow keras sc-learn nccl
-Sci.  packages  : numpy pandas sc-image matplotlib opencv-python ROOT
+Sci.  packages  : numpy pandas sc-image matplotlib opencv-python
 Basic python    : ipython jupyter yaml pygments six zmq wheel h5py tqdm mpi4py horovod
 Development kit : g++/gcc cython nvcc libqt4-dev python-dev
 Utility kit     : git wget emacs vim openssh-client mpich
