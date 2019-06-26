@@ -27,6 +27,7 @@ Version centos7-cuda-tf-mpich-larcv
 %post
     
     # Using the app area to store software:
+    mkdir /app
     cd /app
 
     scl enable devtoolset-4 bash
@@ -39,3 +40,4 @@ Version centos7-cuda-tf-mpich-larcv
     cd larcv3/
     python setup.py install --cmake-executable cmake3
     cd -
+
