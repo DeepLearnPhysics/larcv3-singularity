@@ -39,3 +39,4 @@ Version centos7-cuda-torch
     cd larcv3/
     python setup.py install --cmake-executable cmake3
     cd -
+
