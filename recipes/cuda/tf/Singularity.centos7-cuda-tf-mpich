@@ -18,7 +18,7 @@ singularity exec --nv THIS_CONTAINER.simg bash
 
 %labels
 Maintainer coreyjadams
-Version centos7-cuda-tf1.13.1-mpich3.2.1
+Version centos7-cuda-tf1.14.0-mpich3.2.1
 
 #------------
 # Global installation
@@ -41,7 +41,7 @@ Version centos7-cuda-tf1.13.1-mpich3.2.1
 
     
     # tensorflow    
-    pip3 --no-cache-dir --disable-pip-version-check install --upgrade tensorflow-gpu==1.13.1
+    pip3 --no-cache-dir --disable-pip-version-check install --upgrade tensorflow-gpu==1.14.0
     pip3 --no-cache-dir --disable-pip-version-check install tensorboard
 
     # keras
