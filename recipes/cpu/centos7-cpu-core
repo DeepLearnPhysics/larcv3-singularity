@@ -8,7 +8,7 @@ ML/DL packages  : torch sc-learn
 Sci.  packages  : numpy pandas sc-image matplotlib opencv-python
 Basic python    : ipython jupyter yaml pygments six zmq wheel h5py tqdm
 Development kit : g++/gcc cython libqt4-dev python-dev
-Utility kit     : git wget emacs vim openssh-cl`ient
+Utility kit     : git wget emacs vim openssh-client
 
 To start your container simply try
 singularity exec THIS_CONTAINER.simg bash
