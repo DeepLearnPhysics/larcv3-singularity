@@ -36,7 +36,7 @@ Version centos7-cpu-torch1.0
     yum install -y epel-release
 
     # Python36
-    yum install -y rh-python36-python-devel rh-python36-python-pip rh-python36-python-setuptools
+#    yum install -y rh-python36-python-devel rh-python36-python-pip rh-python36-python-setuptools
 
 
 #    yum install -y wget emacs vim
