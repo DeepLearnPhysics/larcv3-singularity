@@ -3,7 +3,7 @@ From: DeepLearnPhysics/larcv3-singularity:centos7-cuda-core
 
 
 %help
-Centos7 with cuda10.0 cudnn7, mpich, nccl
+Centos7 with cuda11.0 cudnn7, mpich, nccl
 ML/DL packages  : keras sc-learn
 Sci.  packages  : numpy pandas sc-image matplotlib opencv-python ROOT
 Basic python    : ipython jupyter yaml pygments six zmq wheel h5py tqdm mpi4py
